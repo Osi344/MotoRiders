@@ -1,4 +1,6 @@
--name: Riders
-  link: /rider.html
+-name: Home
+  link: /index.html
+-name: Articles
+  link: /index.html
 -name: About
   link: /about.html

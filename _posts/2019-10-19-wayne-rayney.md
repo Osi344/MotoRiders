@@ -1,6 +1,7 @@
 ---
-title: Wayne
-layout: default
+title: Wayne Rainey
+imageURL: ./assets/images/wayne-rainey.jpg
+layout: post
 ---
 # Wayne Rayney
 Pilote moto de vitesse américain né en 1960, il a brillé dans les championnats pendant 10 années.

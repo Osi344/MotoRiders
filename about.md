@@ -1,5 +1,6 @@
 ---
 title: About
-layout: about.html
+layout: default.html
 ---
-Ceci est mon fichier about
+#Ceci est mon fichier about
+Et je mets ce que je veux dedans!

@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 <!-- {% if page.url == item.link %} -->
     <!-- class="current" -->
@@ -5,7 +9,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="road">
-        <img src="./assets/images/Small_CB650F.png" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
+        <img src="/assets/images/Small_CB650F.png" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
     </div>
     <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" -->
     <!-- aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
@@ -31,12 +35,12 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 {% assign filtered_posts = site.posts %}
                 {% for post in filtered_posts %}
-                    <a class="dropdown-item" href="{{ imageURL }}">{{ post.title }}</a>
+                    <a class="dropdown-item" href="{{ post.imageURL }}">{{ post.title }}</a>
                 {% endfor %}
             </div>
         </ul>
         <div>
-            <img src="./assets/images/damier-transp.png" alt="damier" class="Ontheroadagain" width="auto" height="30"
+            <img src="/assets/images/damier-transp.png" alt="damier" class="Ontheroadagain" width="auto" height="30"
                 left="10px">
         </div>
     </div>

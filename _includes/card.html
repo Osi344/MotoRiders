@@ -1,11 +1,12 @@
-{% assign filtered_posts = site.posts %}
-{% for  post in filtered_posts %}
-<a class="dropdown-item" href="{{ post.url }}">{{ post.title }}</a>
-<div class="card col-12 col-md-6 p-2">
-        <img src="{{ post.imageURL }}" class="card-img-top photo" alt="{{ post.title }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+{% for  post in site.posts %} 
+<div class="card col-12 col-md-6 p-2 w-25 h-auto">
+        <a href="{{ post.url }}"><img src="{{ post.imageURL }}" class="card-img-top img-fluid" alt="{{ post.title }}"></a>
         <div class="card-body">
-          <a href="{{ post.url}}"><h5 class="card-title">{{ post.title }}</h5></a>
-          <p class="card-text">Quelques détails sur ...</p>
+          <p class="card-title h3">{{ post.title }}</p>
+          <p class="card-text">{{ post.excer }}</p>
         </div>
     </div>
 {% endfor %}

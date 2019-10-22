@@ -1,6 +1,6 @@
--name: Home
+- name: Home
   link: /index.html
--name: Articles
+- name: Articles
   link: /index.html
--name: About
+- name: About
   link: /about.html

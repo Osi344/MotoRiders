@@ -16,7 +16,7 @@
         <ul class="navbar-nav mr-auto">
             {% for item in site.data.navigation %}
                 <a href="{{ item.link }}" 
-                {% if item.name = "Articles" %} 
+                {% if item.name == "Articles" %} 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">            

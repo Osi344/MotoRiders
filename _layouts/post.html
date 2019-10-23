@@ -1,7 +1,10 @@
-<head>
-    {% include navBar.html %}
-</head>
+---
+layout: default
+---
+
 <p>
     {{ page.date | date_to_string }}
-    {{ content }}
 </p>
+
+{{ content }}
+

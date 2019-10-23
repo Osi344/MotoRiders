@@ -1,10 +1,16 @@
 
-{% for  post in site.posts %} 
-<div class="card col-12 col-md-6" style="width: 8rem;">
-  <a href="{{ post.url }}"><img src="{{ post.imageURL }}" class="card-img-top" alt="{{ post.title }}"></a>
+{% for post in site.posts %} 
+  
+  {% assign ficImg = post.url | split: "." | first | replace: "/", "-" | remove_first: "-" | append: ".jpg" %}
+  {% assign urlFicImg = "/assets/images/" | append: ficImg %}
+  <div class="card col-12 col-md-6" style="width: 8rem;">
+    <a href="{{ post.url }}"><img src="{{ urlFicImg }}" class="card-img-top" alt="{{ post.title }}"></a>
     <div class="card-body">
       <p class="card-title h3">{{ post.title }}</p>
-      <p class="card-text">{{ post.excer }}</p>
-      </div>
+      <p class="card-text">
+          {{ post.excer }}<br>
+          post url : {{ post.url }} /-/ nom de fichier image: {{ urlFicImg }}
+      </p>
     </div>
+  </div>
 {% endfor %}

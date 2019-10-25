@@ -1,13 +1,11 @@
 ---
 title: Mickael Doohan
-imageURL: /assets/images/mickael-doohan.jpg
 excer: Pilote moto de vitesse australien né en 1965 ...
 layout: post
 ---
 
 Mickael Doohan
 ================
-![Mick]( {{ page.imageURL }} "en action")
 
 Pilote moto de vitesse *australien* né en 1965, il a brillé dans les championnats pendant plusieurs années.
 

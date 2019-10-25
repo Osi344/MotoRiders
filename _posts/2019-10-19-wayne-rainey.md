@@ -1,13 +1,11 @@
 ---
 title: Wayne Rainey
-imageURL: /assets/images/wayne-rainey.jpg
 excer: Pilote moto de vitesse américain né en 1960 ...
 layout: post
 ---
 
 Wayne Rayney
 ============
-![Wayne]( {{ page.imageURL }} "en action")
 
 Pilote moto de vitesse *américain* né en 1960, il a brillé dans les championnats pendant 10 années.
 

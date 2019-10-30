@@ -4,7 +4,7 @@ layout: default
 
 <p>
     {{ page.date | date_to_string }}<br/>
-    {% assign ficImg = page.url | split: "." | first | replace: "/", "-" | remove_first: "-" | append: ".jpg" | prepend: "/assets/images/" %}
+    {% assign ficImg = page.url | split: "." | first | replace: "/", "-" | remove_first: "-" | append: ".jpg" | prepend: "assets/images/" %}
     <img src="{{ ficImg }}" alt="{{ page.title }}">
 </p>
 

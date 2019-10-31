@@ -1,2 +1,0 @@
-# MotoRiders
-Application jekyll

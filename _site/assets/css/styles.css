@@ -1,9 +1,0 @@
-.road:hover{
-    /* transform: rotateZ(-30deg); */
-    /* transition-duration: 1s; */
-    /* transition-property: transform; */
-    transform: translate(1900px);
-    transition-duration: 6s;
-    /* animation: wheeling 5s; */
-}
-

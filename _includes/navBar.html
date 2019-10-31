@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="road">
-        <img src="/assets/images/Small-CB650F.png" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
+        <img src="{{ page.url/assets/images/Small-CB650F.png | relative_url }}" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
     </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -9,18 +9,18 @@
             {% for item in site.data.navigation %}
                 {% if item.name == "Articles" %}
                     <li class="nav-item dropdown">
-                        <a href="{{ item.link }}" class="nav-link dropdown-toggle" id="navBarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a href="{{ item.link | relative_url}}" class="nav-link dropdown-toggle" id="navBarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ item.name }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navBarDropdown">
                             {% for post in site.posts %}
-                                <a class="dropdown-item" href="{{ post.url }}">{{ post.title }}</a>
+                                <a class="dropdown-item" href="{{ post.url | relative_url}}">{{ post.title }}</a>
                             {% endfor %}
                         </div>
                     </li>
                 {% else %}
                     <li class="nav-item active">
-                        <a href="{{ item.link }}" class="nav-link">
+                        <a href="{{ item.link | relative_url}}" class="nav-link">
                             {{ item.name }}
                         </a>
                     </li>
@@ -28,7 +28,7 @@
             {% endfor %}
         </ul>
         <div>
-            <img src="/assets/images/damier-transp.png" alt="damier" class="Ontheroadagain" width="auto" height="30"
+            <img src="{{ page.url/assets/images/damier-transp.png | relative_url }}" alt="damier" class="Ontheroadagain" width="auto" height="30"
                 left="10px">
         </div>
     </div>

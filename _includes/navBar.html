@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="road">
-        <img src="{{ page.url/assets/images/Small-CB650F.png | relative_url }}" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
+        <img src="{{ site.baseurl }}/assets/images/Small-CB650F.png" alt="CBF650" class="Ontheroadagain" width="auto" height="40">
     </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -26,9 +26,12 @@
                     </li>
                 {% endif %}
             {% endfor %}
+            <li>
+                {{ site.baseurl }}
+            </li>
         </ul>
         <div>
-            <img src="{{ page.url/assets/images/damier-transp.png | relative_url }}" alt="damier" class="Ontheroadagain" width="auto" height="30"
+            <img src="{{ site.baseurl }}/assets/images/damier-transp.png" alt="damier" class="Ontheroadagain" width="auto" height="30"
                 left="10px">
         </div>
     </div>
